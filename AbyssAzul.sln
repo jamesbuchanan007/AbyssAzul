@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbyssAzul", "AbyssAzul.csproj", "{9B86C9D1-24A0-442E-9A85-78A0F6D6C9BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbyssAzul.Tests", "..\AbyssAzul.Tests\AbyssAzul.Tests.csproj", "{7C0C53B7-3D58-49DE-BE43-F301ED5156E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B86C9D1-24A0-442E-9A85-78A0F6D6C9BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B86C9D1-24A0-442E-9A85-78A0F6D6C9BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B86C9D1-24A0-442E-9A85-78A0F6D6C9BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B86C9D1-24A0-442E-9A85-78A0F6D6C9BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C0C53B7-3D58-49DE-BE43-F301ED5156E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C0C53B7-3D58-49DE-BE43-F301ED5156E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C0C53B7-3D58-49DE-BE43-F301ED5156E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C0C53B7-3D58-49DE-BE43-F301ED5156E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4ABE0908-ED78-4FB7-9673-427057F70CF8}
+	EndGlobalSection
+EndGlobal
