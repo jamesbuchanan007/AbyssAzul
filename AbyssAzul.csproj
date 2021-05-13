@@ -210,6 +210,7 @@
     <Content Include="Content\html\img\brand\brand-4.svg" />
     <Content Include="Content\html\img\brand\brand-5.svg" />
     <Content Include="Content\html\img\brand\brand-6.svg" />
+    <Content Include="Content\html\img\brazil.jpg" />
     <Content Include="Content\html\img\coming-soon.png" />
     <Content Include="Content\html\img\components\header-1-transparent.jpg" />
     <Content Include="Content\html\img\components\header-1.jpg" />
@@ -232,6 +233,9 @@
     <Content Include="Content\html\img\person-2.jpg" />
     <Content Include="Content\html\img\person-3.jpg" />
     <Content Include="Content\html\img\person-4.jpg" />
+    <Content Include="Content\html\img\peru.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\html\img\pexels-harrison-haines-3536511.jpg" />
     <Content Include="Content\html\img\photo\alex-holyoake-571682-unsplash-cropped.jpg" />
     <Content Include="Content\html\img\photo\averie-woodard-319832-unsplash.jpg" />
@@ -278,6 +282,9 @@
     <Content Include="Content\html\img\photo\serrah-galos-494279-unsplash-parallax.jpg" />
     <Content Include="Content\html\img\photo\serrah-galos-494279-unsplash-square.jpg" />
     <Content Include="Content\html\img\photo\serrah-galos-494312-unsplash-parallax.jpg" />
+    <Content Include="Content\html\img\Picture1.jpg" />
+    <Content Include="Content\html\img\Picture2.jpg" />
+    <Content Include="Content\html\img\Picture3.jpg" />
     <Content Include="Content\html\img\prev-dark.svg" />
     <Content Include="Content\html\img\prev-gray.svg" />
     <Content Include="Content\html\img\prev.svg" />
@@ -317,6 +324,7 @@
     <Content Include="Content\html\img\slider\circle-slider-1.jpg" />
     <Content Include="Content\html\img\slider\circle-slider-2.jpg" />
     <Content Include="Content\html\img\slider\circle-slider-3.jpg" />
+    <Content Include="Content\html\img\tuna.jpg" />
     <Content Include="Content\html\img\united-kingdom.svg" />
     <Content Include="Content\html\img\visa.svg" />
     <Content Include="Content\html\img\western-union.svg" />
