@@ -35,9 +35,10 @@
 <body>
     <header class="header header-absolute">
         <!-- Navbar-->
-        <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-airy bg-hover-white bg-fixed-white navbar-hover-light navbar-fixed-light">
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark navbar-airy bg-hover-white bg-fixed-white navbar-hover-light navbar-fixed-light">
             <div class="container-fluid">
-                <!-- Navbar Header  --><a class="navbar-brand" href="/Home/Index">
+                <!-- Navbar Header  -->
+                <a class="navbar-brand" href="/Home/Index">
                     <h2>AbyssAzul</h2>
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -66,151 +67,152 @@
             </div>
         </nav>
     </header>
-        @RenderBody()
-        <!-- Footer-->
-        <footer class="main-footer">
-            <!-- Services block-->
-            <div class="bg-gray-100 text-dark-700 py-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 service-column">
-                            <svg class="svg-icon service-icon">
-                                <use xlink:href="#delivery-time-1"> </use>
-                            </svg>
-                            <div class="service-text">
-                                <h6 class="text-uppercase">Free shipping &amp; return</h6>
-                                <p class="text-muted font-weight-light text-sm mb-0">Free Shipping over $300</p>
-                            </div>
+    @RenderBody()
+    <!-- Footer-->
+    <footer class="main-footer">
+        <!-- Services block-->
+        <div class="bg-gray-100 text-dark-700 py-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 service-column">
+                        <svg class="svg-icon service-icon">
+                            <use xlink:href="#delivery-time-1"> </use>
+                        </svg>
+                        <div class="service-text">
+                            <h6 class="text-uppercase">Free shipping &amp; return</h6>
+                            <p class="text-muted font-weight-light text-sm mb-0">Free Shipping over $300</p>
                         </div>
-                        <div class="col-lg-4 service-column">
-                            <svg class="svg-icon service-icon">
-                                <use xlink:href="#money-1"> </use>
-                            </svg>
-                            <div class="service-text">
-                                <h6 class="text-uppercase">Money back guarantee</h6>
-                                <p class="text-muted font-weight-light text-sm mb-0">30 Days Money Back Guarantee</p>
-                            </div>
+                    </div>
+                    <div class="col-lg-4 service-column">
+                        <svg class="svg-icon service-icon">
+                            <use xlink:href="#money-1"> </use>
+                        </svg>
+                        <div class="service-text">
+                            <h6 class="text-uppercase">Money back guarantee</h6>
+                            <p class="text-muted font-weight-light text-sm mb-0">30 Days Money Back Guarantee</p>
                         </div>
-                        <div class="col-lg-4 service-column">
-                            <svg class="svg-icon service-icon">
-                                <use xlink:href="#customer-support-1"> </use>
-                            </svg>
-                            <div class="service-text">
-                                <h6 class="text-uppercase">020-800-456-747</h6>
-                                <p class="text-muted font-weight-light text-sm mb-0">24/7 Available Support</p>
-                            </div>
+                    </div>
+                    <div class="col-lg-4 service-column">
+                        <svg class="svg-icon service-icon">
+                            <use xlink:href="#customer-support-1"> </use>
+                        </svg>
+                        <div class="service-text">
+                            <h6 class="text-uppercase">020-800-456-747</h6>
+                            <p class="text-muted font-weight-light text-sm mb-0">24/7 Available Support</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Main block - menus, subscribe form-->
-            <div class="py-6 bg-gray-300 text-muted">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                            <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">AbyssAzul<span class="text-primary">.</span></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
-                                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
-                                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
-                                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="vimeo"><i class="fab fa-vimeo"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                            <h6 class="text-uppercase text-dark mb-3">Region</h6>
-                            <ul class="list-unstyled">
-                                <li> <a class="text-muted" href="#">Ecuador and Peru</a></li>
-                                <li> <a class="text-muted" href="#">Brazil and Uruguay</a></li>
-                                <li> <a class="text-muted" href="#">Guyana and Suriname</a></li>
-                                <li> <a class="text-muted" href="#">Shrimp / Camarón</a></li>
-                                <li> <a class="text-muted" href="#">Other Specialties</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                            <h6 class="text-uppercase text-dark mb-3">Company</h6>
-                            <ul class="list-unstyled">
-                                <li> <a class="text-muted" href="#">About Us                    </a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <h6 class="text-uppercase text-dark mb-3">Join Our Contact List!</h6>
-                            <p class="mb-3"> Stay apprised of upcoming specials.</p>
-                            <form action="#" id="newsletter-form">
-                                <div class="input-group mb-3">
-                                    <input class="form-control bg-transparent border-secondary border-right-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary border-left-0" type="submit"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
-                                    </div>
+        </div>
+        <!-- Main block - menus, subscribe form-->
+        <div class="py-6 bg-gray-300 text-muted">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">AbyssAzul<span class="text-primary">.</span></div>
+                        <p>This can be your slogan.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="Vimeo"><i class="fab fa-vimeo"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <h6 class="text-uppercase text-dark mb-3">Region & Specialties</h6>
+                        <ul class="list-unstyled">
+                            <li> <a class="text-muted" href="#">Ecuador and Peru</a></li>
+                            <li> <a class="text-muted" href="#">Brazil and Uruguay</a></li>
+                            <li> <a class="text-muted" href="#">Guyana and Suriname</a></li>
+                            <li> <a class="text-muted" href="#">Shrimp / Camarón</a></li>
+                            <li> <a class="text-muted" href="#">Other Specialties</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <h6 class="text-uppercase text-dark mb-3">Company</h6>
+                        <ul class="list-unstyled">
+                            <li> <a class="text-muted" href="#">About Us                    </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6 class="text-uppercase text-dark mb-3">Join Our Contact List!</h6>
+                        <p class="mb-3"> Stay apprised of upcoming specials.</p>
+                        <form action="#" id="newsletter-form">
+                            <div class="input-group mb-3">
+                                <input class="form-control bg-transparent border-secondary border-right-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary border-left-0" type="submit"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- Copyright section of the footer-->
-            <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 text-center text-md-left">
-                            <p class="mb-md-0">&copy; 2020 Your company.  All rights reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
-                                <li class="list-inline-item"><img class="w-2rem" src="img/visa.svg" alt="..."></li>
-                                <li class="list-inline-item"><img class="w-2rem" src="img/mastercard.svg" alt="..."></li>
-                                <li class="list-inline-item"><img class="w-2rem" src="img/paypal.svg" alt="..."></li>
-                                <li class="list-inline-item"><img class="w-2rem" src="img/western-union.svg" alt="..."></li>
-                            </ul>
-                        </div>
+        </div>
+        <!-- Copyright section of the footer-->
+        <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-left">
+                        <p class="mb-md-0">&copy; 2021 AbyssAzul.  All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
+                            <li class="list-inline-item"><img class="w-2rem" src="/Content/html/img/visa.svg" alt="..."></li>
+                            <li class="list-inline-item"><img class="w-2rem" src="/Content/html/img/mastercard.svg" alt="..."></li>
+                            <li class="list-inline-item"><img class="w-2rem" src="/Content/html/img/paypal.svg" alt="..."></li>
+                            <li class="list-inline-item"><img class="w-2rem" src="/Content/html/img/western-union.svg" alt="..."></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- /Footer end-->
-        <div id="scrollTop"><i class="fa fa-long-arrow-alt-up"></i></div>
-        <!-- JavaScript files-->
-        <script>
-            // ------------------------------------------------------- //
-            //   Inject SVG Sprite -
-            //   see more here
-            //   https://css-tricks.com/ajaxing-svg-sprite/
-            // ------------------------------------------------------ //
-            function injectSvgSprite(path) {
+        </div>
+    </footer>
+    <!-- /Footer end-->
+    <div id="scrollTop"><i class="fa fa-long-arrow-alt-up"></i></div>
+    <!-- JavaScript files-->
+    <script>
+        // ------------------------------------------------------- //
+        //   Inject SVG Sprite -
+        //   see more here
+        //   https://css-tricks.com/ajaxing-svg-sprite/
+        // ------------------------------------------------------ //
+        function injectSvgSprite(path) {
 
-                var ajax = new XMLHttpRequest();
-                ajax.open("GET", path, true);
-                ajax.send();
-                ajax.onload = function (e) {
-                    var div = document.createElement("div");
-                    div.className = 'd-none';
-                    div.innerHTML = ajax.responseText;
-                    document.body.insertBefore(div, document.body.childNodes[0]);
-                }
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", path, true);
+            ajax.send();
+            ajax.onload = function (e) {
+                var div = document.createElement("div");
+                div.className = 'd-none';
+                div.innerHTML = ajax.responseText;
+                document.body.insertBefore(div, document.body.childNodes[0]);
             }
-            // this is set to Bootstrapious website as you cannot
-            // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-            // while using file:// protocol
-            // pls don't forget to change to your domain :)
-            injectSvgSprite('https://demo.bootstrapious.com/sell/1-2-0/icons/orion-svg-sprite.svg');</script>
-        <!-- jQuery-->
-        <script src="/Content/html/vendor/jquery/jquery.min.js"></script>
-        <!-- Bootstrap JavaScript Bundle (Popper.js included)-->
-        <script src="/Content/html/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- Owl Carousel-->
-        <script src="/Content/html/vendor/owl.carousel/owl.carousel.js"></script>
-        <script src="/Content/html/vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
-        <!-- NoUI Slider (price slider)-->
-        <script src="/Content/html/vendor/nouislider/nouislider.min.js"></script>
-        <!-- Smooth scrolling-->
-        <script src="/Content/html/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
-        <!-- Lightbox -->
-        <script src="/Content/html/vendor/ekko-lightbox/ekko-lightbox.min.js"></script>
-        <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
-        <script src="/Content/html/vendor/object-fit-images/ofi.min.js"></script>
-        <script>var basePath = ''</script>
-        <script src="/Content/html/js/theme.js"></script>
-        <script src="/Content/html/vendor/jquery-parallax.js/parallax.min.js"></script>
+        }
+        // this is set to Bootstrapious website as you cannot
+        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+        // while using file:// protocol
+        // pls don't forget to change to your domain :)
+        injectSvgSprite('https://demo.bootstrapious.com/sell/1-2-0/icons/orion-svg-sprite.svg');</script>
+    <!-- jQuery-->
+    <script src="/Content/html/vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript Bundle (Popper.js included)-->
+    <script src="/Content/html/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="/Content/html/vendor/owl.carousel/owl.carousel.js"></script>
+    <script src="/Content/html/vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
+    <!-- NoUI Slider (price slider)-->
+    <script src="/Content/html/vendor/nouislider/nouislider.min.js"></script>
+    <!-- Smooth scrolling-->
+    <script src="/Content/html/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <!-- Lightbox -->
+    <script src="/Content/html/vendor/ekko-lightbox/ekko-lightbox.min.js"></script>
+    <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
+    <script src="/Content/html/vendor/object-fit-images/ofi.min.js"></script>
+    <script>var basePath = ''</script>
+    <script src="/Content/html/js/theme.js"></script>
+    <script src="/Content/html/vendor/jquery-parallax.js/parallax.min.js"></script>
+    <script src="/Content/html/css/custom.css"></script>
 </body>
 </html>
