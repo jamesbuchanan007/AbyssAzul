@@ -134,6 +134,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,14 +204,24 @@
     <Content Include="Content\html\icons\demo.html" />
     <Content Include="Content\html\icons\orion-svg-sprite.svg" />
     <Content Include="Content\html\icons\styles.css" />
-    <Content Include="Content\html\img\animal-21668_1920.jpg" />
+    <Content Include="Content\html\img\20210516144826.jpg" />
+    <Content Include="Content\html\img\20210516145732.jpg" />
+    <Content Include="Content\html\img\20210516145813.jpg" />
+    <Content Include="Content\html\img\20210516150433.jpg" />
+    <Content Include="Content\html\img\20210516150636.jpg" />
+    <Content Include="Content\html\img\20210516150817.jpg" />
+    <Content Include="Content\html\img\20210516151024.jpg" />
+    <Content Include="Content\html\img\20210516151259.jpg" />
+    <Content Include="Content\html\img\20210516151954.jpg" />
+    <None Include="Content\html\img\20210516151954" />
+    <Content Include="Content\html\img\20210516152518.jpg" />
     <Content Include="Content\html\img\brand\brand-1.svg" />
     <Content Include="Content\html\img\brand\brand-2.svg" />
     <Content Include="Content\html\img\brand\brand-3.svg" />
     <Content Include="Content\html\img\brand\brand-4.svg" />
     <Content Include="Content\html\img\brand\brand-5.svg" />
     <Content Include="Content\html\img\brand\brand-6.svg" />
-    <Content Include="Content\html\img\brazil.jpg" />
+    <Content Include="Content\html\img\20210516152230.jpg" />
     <Content Include="Content\html\img\coming-soon.png" />
     <Content Include="Content\html\img\components\header-1-transparent.jpg" />
     <Content Include="Content\html\img\components\header-1.jpg" />
@@ -233,7 +244,7 @@
     <Content Include="Content\html\img\person-2.jpg" />
     <Content Include="Content\html\img\person-3.jpg" />
     <Content Include="Content\html\img\person-4.jpg" />
-    <Content Include="Content\html\img\peru.jpg">
+    <Content Include="Content\html\img\20210516152211.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\html\img\pexels-harrison-haines-3536511.jpg" />
@@ -283,8 +294,8 @@
     <Content Include="Content\html\img\photo\serrah-galos-494279-unsplash-square.jpg" />
     <Content Include="Content\html\img\photo\serrah-galos-494312-unsplash-parallax.jpg" />
     <Content Include="Content\html\img\Picture1.jpg" />
-    <Content Include="Content\html\img\Picture2.jpg" />
-    <Content Include="Content\html\img\Picture3.jpg" />
+    <Content Include="Content\html\img\20210516145344.jpg" />
+    <Content Include="Content\html\img\20210516145635.jpg" />
     <Content Include="Content\html\img\prev-dark.svg" />
     <Content Include="Content\html\img\prev-gray.svg" />
     <Content Include="Content\html\img\prev.svg" />
@@ -324,7 +335,7 @@
     <Content Include="Content\html\img\slider\circle-slider-1.jpg" />
     <Content Include="Content\html\img\slider\circle-slider-2.jpg" />
     <Content Include="Content\html\img\slider\circle-slider-3.jpg" />
-    <Content Include="Content\html\img\tuna.jpg" />
+    <Content Include="Content\html\img\20210516152252.jpg" />
     <Content Include="Content\html\img\united-kingdom.svg" />
     <Content Include="Content\html\img\visa.svg" />
     <Content Include="Content\html\img\western-union.svg" />
@@ -880,6 +891,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Region\EcuadorPeru.cshtml" />
+    <Content Include="Views\Region\BrazilUruguay.cshtml" />
+    <Content Include="Views\Region\GuyanaSurinam.cshtml" />
+    <Content Include="Views\Region\ShrimpCamaron.cshtml" />
+    <Content Include="Views\Region\OtherSpecialties.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
