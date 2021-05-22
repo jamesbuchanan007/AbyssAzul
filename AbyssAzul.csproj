@@ -134,13 +134,22 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\RegionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CommonNames.cs" />
+    <Compile Include="Models\Helper.cs" />
+    <Compile Include="Models\Images.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\AbyssAzulDB.mdf" />
+    <Content Include="App_Data\AbyssAzulDB_log.ldf">
+      <DependentUpon>AbyssAzulDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\html\about-2.html" />
     <Content Include="Content\html\about.html" />
     <Content Include="Content\html\blog.html" />
@@ -265,6 +274,9 @@
     <Content Include="Content\html\img\20210520173149.jpg" />
     <Content Include="Content\html\img\20210520173231.jpg" />
     <Content Include="Content\html\img\20210520173258.jpg" />
+    <Content Include="Content\html\img\20210522123148.jpg" />
+    <Content Include="Content\html\img\20210522123252.jpg" />
+    <Content Include="Content\html\img\20210522123317.jpg" />
     <Content Include="Content\html\img\brand\brand-1.svg" />
     <Content Include="Content\html\img\brand\brand-2.svg" />
     <Content Include="Content\html\img\brand\brand-3.svg" />
@@ -946,12 +958,11 @@
     <Content Include="Views\Region\GuyanaSurinam.cshtml" />
     <Content Include="Views\Region\ShrimpCamaron.cshtml" />
     <Content Include="Views\Region\OtherSpecialties.cshtml" />
+    <Content Include="Views\Product\Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\html\vendor\jquery.cookie\test\" />
     <Folder Include="Content\html\vendor\nouislider\distribute\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
