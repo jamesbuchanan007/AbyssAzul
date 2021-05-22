@@ -84,3 +84,5 @@ D:\Source\AbyssAzul\obj\Debug\AbyssAzul.csproj.CopyComplete
 D:\Source\AbyssAzul\obj\Debug\AbyssAzul.dll
 D:\Source\AbyssAzul\obj\Debug\AbyssAzul.pdb
 D:\Source\AbyssAzul\bin\Content\html\img\20210516152211.jpg
+D:\Source\AbyssAzul\bin\Dapper.dll
+D:\Source\AbyssAzul\bin\Dapper.xml

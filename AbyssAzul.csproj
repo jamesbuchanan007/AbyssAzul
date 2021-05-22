@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.2.0.90\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -959,6 +962,7 @@
     <Content Include="Views\Region\ShrimpCamaron.cshtml" />
     <Content Include="Views\Region\OtherSpecialties.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
+    <Content Include="Views\Shared\_ProductLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\html\vendor\jquery.cookie\test\" />
