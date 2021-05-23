@@ -16,18 +16,9 @@ namespace AbyssAzul.Controllers
         // GET: Product
         public ActionResult Product(string productId)
         {
-            var product = new Product();
-            var isNum = int.TryParse(productId, out var intProductId);
-            using (var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Default"].ConnectionString))
-            {
-                var result = conn.Query<Product>(sql: "Product_Get",
-                    commandType: CommandType.StoredProcedure, param: new
-                    {
-                       ProductId = intProductId
-                    });
-            }
+            var product = new Product(productId);
 
-            return View();
+            return View(product);
         }
     }
 }

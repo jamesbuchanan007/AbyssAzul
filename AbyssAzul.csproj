@@ -146,10 +146,11 @@
     <Compile Include="Models\Helper.cs" />
     <Compile Include="Models\Images.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Regions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\AbyssAzulDB.mdf" />
+    <EmbeddedResource Include="App_Data\AbyssAzulDB.mdf" />
     <Content Include="App_Data\AbyssAzulDB_log.ldf">
       <DependentUpon>AbyssAzulDB.mdf</DependentUpon>
     </Content>
