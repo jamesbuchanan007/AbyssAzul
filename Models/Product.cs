@@ -93,7 +93,7 @@ namespace AbyssAzul.Models
                     commandType: CommandType.StoredProcedure, param: new
                     {
                         RegionId = intRegionId
-                    });
+                    }).OrderBy(x=>x.Name);
             }
         }
     }
