@@ -17,7 +17,6 @@ namespace AbyssAzul.Controllers
         public ActionResult Product(string productId)
         {
             var product = new Product(productId);
-
             return View(product);
         }
     }

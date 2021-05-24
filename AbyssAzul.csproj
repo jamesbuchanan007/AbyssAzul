@@ -957,13 +957,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Region\EcuadorPeru.cshtml" />
-    <Content Include="Views\Region\BrazilUruguay.cshtml" />
-    <Content Include="Views\Region\GuyanaSurinam.cshtml" />
-    <Content Include="Views\Region\ShrimpCamaron.cshtml" />
-    <Content Include="Views\Region\OtherSpecialties.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
     <Content Include="Views\Shared\_ProductLayout.cshtml" />
+    <Content Include="Views\Region\Region.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\html\vendor\jquery.cookie\test\" />

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbyssAzul", "AbyssAzul.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbyssAzul.Tests", "..\AbyssAzul.Tests\AbyssAzul.Tests.csproj", "{7C0C53B7-3D58-49DE-BE43-F301ED5156E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbyssAzulUploader", "..\AbyssAzulUploader\AbyssAzulUploader.csproj", "{CE8BB8C5-31CF-47BF-85CE-8233DE54E73D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7C0C53B7-3D58-49DE-BE43-F301ED5156E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C0C53B7-3D58-49DE-BE43-F301ED5156E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C0C53B7-3D58-49DE-BE43-F301ED5156E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8BB8C5-31CF-47BF-85CE-8233DE54E73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8BB8C5-31CF-47BF-85CE-8233DE54E73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8BB8C5-31CF-47BF-85CE-8233DE54E73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8BB8C5-31CF-47BF-85CE-8233DE54E73D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

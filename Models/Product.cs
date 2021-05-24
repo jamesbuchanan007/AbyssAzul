@@ -9,6 +9,7 @@ using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Web;
 using Dapper;
+using WebGrease.Css.Extensions;
 
 namespace AbyssAzul.Models
 {
@@ -25,6 +26,7 @@ namespace AbyssAzul.Models
         public string Region { get; set; }
         public string CommonNamesFormatted { get; set; }
         public string URLName { get; set; }
+        public string FileName { get; set; }
         public IEnumerable<CommonNames> CommonNames { get; set; } = new List<CommonNames>();
         public IEnumerable<Images> Images { get; set; } = new List<Images>();
 
@@ -34,8 +36,12 @@ namespace AbyssAzul.Models
 
         public Product(string productId)
         {
+          
             var isNum = int.TryParse(productId, out var intProductId);
-            if (!isNum) return;
+            if (productId.Length > 50 || !isNum)
+            {
+                throw new Exception("Invalid Product ID");
+            }
 
             using (var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Default"].ConnectionString))
             {
@@ -86,14 +92,26 @@ namespace AbyssAzul.Models
         public IEnumerable<Product> GetProductsByRegion(string regionId)
         {
             var isNum = int.TryParse(regionId, out var intRegionId);
-            if (!isNum) throw new Exception("Region ID is not valid");
+            if(regionId.Length > 50 || !isNum) throw new Exception("Invalid Region ID");
             using (var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Default"].ConnectionString))
             {
-                return conn.Query<Product>(sql: "Product_GetByRegion",
+                var products = conn.Query<Product>(sql: "Product_GetByRegion",
                     commandType: CommandType.StoredProcedure, param: new
                     {
                         RegionId = intRegionId
                     }).OrderBy(x=>x.Name);
+
+                foreach (var product in products)
+                {
+                    var image = conn.Query<Images>(sql: "Images_GetList",
+                        commandType: CommandType.StoredProcedure, param: new
+                        {
+                            ProductId = product.ProductId
+                        }).FirstOrDefault()
+                        ?.FileName;
+                    product.FileName = image;
+                }
+                return products;
             }
         }
     }
