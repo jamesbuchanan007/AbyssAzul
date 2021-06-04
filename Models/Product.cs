@@ -24,6 +24,7 @@ namespace AbyssAzul.Models
         public string ProcessPacking { get; set; }
         public string Origin { get; set; }
         public string Region { get; set; }
+        public int RegionId { get; set; }
         public string CommonNamesFormatted { get; set; }
         public string URLName { get; set; }
         public string FileName { get; set; }
@@ -77,8 +78,9 @@ namespace AbyssAzul.Models
                 Region = region.RegionName;
                 CommonNames = commonNames;
                 Images = image;
-                URLName = product.URLName;
+                URLName = region.RegionNameView;
                 FormatCommonNames(commonNames);
+                RegionId = region.RegionId;
             }
         }
 

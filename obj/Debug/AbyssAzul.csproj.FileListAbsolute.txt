@@ -1,5 +1,3 @@
-D:\Source\AbyssAzul\obj\Debug\AbyssAzul.csprojAssemblyReference.cache
-D:\Source\AbyssAzul\obj\Debug\AbyssAzul.csproj.CoreCompileInputs.cache
 D:\Source\AbyssAzul\bin\Content\html\img\20210516152211.jpg
 D:\Source\AbyssAzul\bin\AbyssAzul.dll.config
 D:\Source\AbyssAzul\bin\AbyssAzul.dll
@@ -83,6 +81,18 @@ D:\Source\AbyssAzul\bin\System.Net.Http.Formatting.xml
 D:\Source\AbyssAzul\bin\System.Web.Http.xml
 D:\Source\AbyssAzul\bin\System.Web.Http.WebHost.xml
 D:\Source\AbyssAzul\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Source\AbyssAzul\obj\Debug\AbyssAzul.csproj.CoreCompileInputs.cache
 D:\Source\AbyssAzul\obj\Debug\AbyssAzul.csproj.CopyComplete
 D:\Source\AbyssAzul\obj\Debug\AbyssAzul.dll
 D:\Source\AbyssAzul\obj\Debug\AbyssAzul.pdb
+D:\Source\AbyssAzul\obj\Debug\AbyssAzul.csprojAssemblyReference.cache
+D:\Source\AbyssAzul\bin\AngleSharp.Css.dll
+D:\Source\AbyssAzul\bin\AngleSharp.dll
+D:\Source\AbyssAzul\bin\HtmlSanitizer.dll
+D:\Source\AbyssAzul\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Source\AbyssAzul\bin\System.Text.Encoding.CodePages.dll
+D:\Source\AbyssAzul\bin\AngleSharp.xml
+D:\Source\AbyssAzul\bin\AngleSharp.Css.xml
+D:\Source\AbyssAzul\bin\HtmlSanitizer.xml
+D:\Source\AbyssAzul\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Source\AbyssAzul\bin\System.Text.Encoding.CodePages.xml

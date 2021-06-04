@@ -45,13 +45,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AngleSharp, Version=0.15.0.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>packages\AngleSharp.0.15.0\lib\net472\AngleSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="AngleSharp.Css, Version=0.15.0.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>packages\AngleSharp.Css.0.15.0\lib\net472\AngleSharp.Css.dll</HintPath>
+    </Reference>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Dapper.2.0.90\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizer, Version=5.0.0.0, Culture=neutral, PublicKeyToken=61c49a1a9e79cc28, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlSanitizer.5.0.404\lib\net46\HtmlSanitizer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -139,6 +154,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\RegionController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -147,6 +163,7 @@
     <Compile Include="Models\Images.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Regions.cs" />
+    <Compile Include="Models\Search.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -281,6 +298,154 @@
     <Content Include="Content\html\img\20210522123148.jpg" />
     <Content Include="Content\html\img\20210522123252.jpg" />
     <Content Include="Content\html\img\20210522123317.jpg" />
+    <Content Include="Content\html\img\20210525180927.jpg" />
+    <Content Include="Content\html\img\20210525181027.jpg" />
+    <Content Include="Content\html\img\20210525181116.jpg" />
+    <Content Include="Content\html\img\20210525182122.jpg" />
+    <Content Include="Content\html\img\20210525182132.jpg" />
+    <Content Include="Content\html\img\20210525183324.jpg" />
+    <Content Include="Content\html\img\20210525183441.jpg" />
+    <Content Include="Content\html\img\20210525183454.jpg" />
+    <Content Include="Content\html\img\20210525183847.jpg" />
+    <Content Include="Content\html\img\20210525183901.jpg" />
+    <Content Include="Content\html\img\20210525183922.jpg" />
+    <Content Include="Content\html\img\20210525183942.jpg" />
+    <Content Include="Content\html\img\20210525184710.jpg" />
+    <Content Include="Content\html\img\20210525184725.jpg" />
+    <Content Include="Content\html\img\20210525184738.jpg" />
+    <Content Include="Content\html\img\20210525185419.jpg" />
+    <Content Include="Content\html\img\20210525185428.jpg" />
+    <Content Include="Content\html\img\20210525185439.jpg" />
+    <Content Include="Content\html\img\20210525185954.jpg" />
+    <Content Include="Content\html\img\20210525190005.jpg" />
+    <Content Include="Content\html\img\20210525190014.jpg" />
+    <Content Include="Content\html\img\20210525190306.jpg" />
+    <Content Include="Content\html\img\20210525190320.jpg" />
+    <Content Include="Content\html\img\20210525190330.jpg" />
+    <Content Include="Content\html\img\20210525190349.jpg" />
+    <Content Include="Content\html\img\20210525190402.jpg" />
+    <Content Include="Content\html\img\20210525190412.jpg" />
+    <Content Include="Content\html\img\20210525190422.jpg" />
+    <Content Include="Content\html\img\20210525190433.jpg" />
+    <Content Include="Content\html\img\20210525190726.png" />
+    <Content Include="Content\html\img\20210525190750.jpg" />
+    <Content Include="Content\html\img\20210525190801.jpg" />
+    <Content Include="Content\html\img\20210525190810.jpg" />
+    <Content Include="Content\html\img\20210525191322.jpg" />
+    <Content Include="Content\html\img\20210525191339.jpg" />
+    <Content Include="Content\html\img\20210525191349.jpg" />
+    <Content Include="Content\html\img\20210526181501.jpg" />
+    <Content Include="Content\html\img\20210526181518.jpg" />
+    <Content Include="Content\html\img\20210526181540.jpg" />
+    <Content Include="Content\html\img\20210526181856.jpg" />
+    <Content Include="Content\html\img\20210526181914.jpg" />
+    <Content Include="Content\html\img\20210526181928.jpg" />
+    <Content Include="Content\html\img\20210526181941.jpg" />
+    <Content Include="Content\html\img\20210526181957.jpg" />
+    <Content Include="Content\html\img\20210526182220.jpg" />
+    <Content Include="Content\html\img\20210526182238.jpg" />
+    <Content Include="Content\html\img\20210526182248.jpg" />
+    <Content Include="Content\html\img\20210526182517.jpg" />
+    <Content Include="Content\html\img\20210526182526.jpg" />
+    <Content Include="Content\html\img\20210526182536.jpg" />
+    <Content Include="Content\html\img\20210526182546.jpg" />
+    <Content Include="Content\html\img\20210526182900.jpg" />
+    <Content Include="Content\html\img\20210526182912.jpg" />
+    <Content Include="Content\html\img\20210526182923.jpg" />
+    <Content Include="Content\html\img\20210526182933.jpg" />
+    <Content Include="Content\html\img\20210526182943.jpg" />
+    <Content Include="Content\html\img\20210526183024.jpg" />
+    <Content Include="Content\html\img\20210526183326.jpg" />
+    <Content Include="Content\html\img\20210526183336.jpg" />
+    <Content Include="Content\html\img\20210526183345.jpg" />
+    <Content Include="Content\html\img\20210526183358.jpg" />
+    <Content Include="Content\html\img\20210526183721.png" />
+    <Content Include="Content\html\img\20210526184047.jpg" />
+    <Content Include="Content\html\img\20210526184109.jpg" />
+    <Content Include="Content\html\img\20210526184119.jpg" />
+    <Content Include="Content\html\img\20210526184423.jpg" />
+    <Content Include="Content\html\img\20210526184433.jpg" />
+    <Content Include="Content\html\img\20210526184441.jpg" />
+    <Content Include="Content\html\img\20210526184719.jpg" />
+    <Content Include="Content\html\img\20210526184728.jpg" />
+    <Content Include="Content\html\img\20210526184737.jpg" />
+    <Content Include="Content\html\img\20210526185018.jpg" />
+    <Content Include="Content\html\img\20210526185030.jpg" />
+    <Content Include="Content\html\img\20210526185038.jpg" />
+    <Content Include="Content\html\img\20210526185327.jpg" />
+    <Content Include="Content\html\img\20210526185338.jpg" />
+    <Content Include="Content\html\img\20210526185346.jpg" />
+    <Content Include="Content\html\img\20210526185616.jpg" />
+    <Content Include="Content\html\img\20210526185627.jpg" />
+    <Content Include="Content\html\img\20210526185637.jpg" />
+    <Content Include="Content\html\img\20210526185916.jpg" />
+    <Content Include="Content\html\img\20210526185926.jpg" />
+    <Content Include="Content\html\img\20210526185934.jpg" />
+    <Content Include="Content\html\img\20210526190208.jpg" />
+    <Content Include="Content\html\img\20210526190219.jpg" />
+    <Content Include="Content\html\img\20210526190228.jpg" />
+    <Content Include="Content\html\img\20210527185542.jpg" />
+    <Content Include="Content\html\img\20210527185607.jpg" />
+    <Content Include="Content\html\img\20210527185617.jpg" />
+    <Content Include="Content\html\img\20210527190214.jpg" />
+    <Content Include="Content\html\img\20210527190226.jpg" />
+    <Content Include="Content\html\img\20210527190236.jpg" />
+    <Content Include="Content\html\img\20210527191147.jpg" />
+    <Content Include="Content\html\img\20210527191220.jpg" />
+    <Content Include="Content\html\img\20210527191230.jpg" />
+    <Content Include="Content\html\img\20210527191455.jpg" />
+    <Content Include="Content\html\img\20210527191505.jpg" />
+    <Content Include="Content\html\img\20210527191516.jpg" />
+    <Content Include="Content\html\img\20210527191738.jpg" />
+    <Content Include="Content\html\img\20210527191748.jpg" />
+    <Content Include="Content\html\img\20210527191800.jpg" />
+    <Content Include="Content\html\img\20210527192706.jpg" />
+    <Content Include="Content\html\img\20210527192715.jpg" />
+    <Content Include="Content\html\img\20210527192724.jpg" />
+    <Content Include="Content\html\img\20210530095032.jpg" />
+    <Content Include="Content\html\img\20210530095709.jpg" />
+    <Content Include="Content\html\img\20210530095720.jpg" />
+    <Content Include="Content\html\img\20210530095802.jpg" />
+    <Content Include="Content\html\img\20210530095810.jpg" />
+    <Content Include="Content\html\img\20210530095822.jpg" />
+    <Content Include="Content\html\img\20210530100226.jpg" />
+    <Content Include="Content\html\img\20210530100237.jpg" />
+    <Content Include="Content\html\img\20210530100251.jpg" />
+    <Content Include="Content\html\img\20210530100303.jpg" />
+    <Content Include="Content\html\img\20210530100312.jpg" />
+    <Content Include="Content\html\img\20210530101045.jpg" />
+    <Content Include="Content\html\img\20210530101058.jpg" />
+    <Content Include="Content\html\img\20210530101109.jpg" />
+    <Content Include="Content\html\img\20210530105034.jpg" />
+    <Content Include="Content\html\img\20210530105045.jpg" />
+    <Content Include="Content\html\img\20210530105055.png" />
+    <Content Include="Content\html\img\20210530105105.jpg" />
+    <Content Include="Content\html\img\20210530105542.jpg" />
+    <Content Include="Content\html\img\20210530105554.jpg" />
+    <Content Include="Content\html\img\20210530105602.jpg" />
+    <Content Include="Content\html\img\20210530105611.jpg" />
+    <Content Include="Content\html\img\20210530105621.jpg" />
+    <Content Include="Content\html\img\20210530105630.jpg" />
+    <Content Include="Content\html\img\20210530110008.jpg" />
+    <Content Include="Content\html\img\20210530110017.jpg" />
+    <Content Include="Content\html\img\20210530110027.jpg" />
+    <Content Include="Content\html\img\20210530110037.jpg" />
+    <Content Include="Content\html\img\20210530110045.jpg" />
+    <Content Include="Content\html\img\20210530110056.jpg" />
+    <Content Include="Content\html\img\20210530110107.jpg" />
+    <Content Include="Content\html\img\20210530110116.jpg" />
+    <Content Include="Content\html\img\20210530110242.jpg" />
+    <Content Include="Content\html\img\20210530110251.jpg" />
+    <Content Include="Content\html\img\20210530110300.jpg" />
+    <Content Include="Content\html\img\20210530110440.jpg" />
+    <Content Include="Content\html\img\20210530110452.jpg" />
+    <Content Include="Content\html\img\20210530110502.jpg" />
+    <Content Include="Content\html\img\20210530110510.jpg" />
+    <Content Include="Content\html\img\20210530110519.jpg" />
+    <Content Include="Content\html\img\20210530110528.jpg" />
+    <Content Include="Content\html\img\20210530110641.jpg" />
+    <Content Include="Content\html\img\20210530110650.jpg" />
+    <Content Include="Content\html\img\20210530110659.jpg" />
     <Content Include="Content\html\img\brand\brand-1.svg" />
     <Content Include="Content\html\img\brand\brand-2.svg" />
     <Content Include="Content\html\img\brand\brand-3.svg" />
@@ -960,6 +1125,7 @@
     <Content Include="Views\Product\Product.cshtml" />
     <Content Include="Views\Shared\_ProductLayout.cshtml" />
     <Content Include="Views\Region\Region.cshtml" />
+    <Content Include="Views\Search\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\html\vendor\jquery.cookie\test\" />

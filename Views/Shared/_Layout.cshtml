@@ -70,12 +70,41 @@
                             <a class="nav-link" href="/Region/Region?regionId=5">Other Specialties</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="/Home/Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
+                
+                <div class="d-flex align-items-center justify-content-between justify-content-lg-end mt-1 mb-2 my-lg-0">
+                    <!-- Search Button-->
+                    <div class="nav-item navbar-icon-link" data-toggle="search">
+                        <svg class="svg-icon">
+                            <use xlink:href="#search-1"> </use>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </nav>
+        <!-- Fullscreen search area-->
+        <div class="search-area-wrapper">
+            <div class="search-area d-flex align-items-center justify-content-center">
+                <div class="close-btn">
+                    <svg class="svg-icon svg-icon-light w-3rem h-3rem">
+                        <use xlink:href="#close-1"> </use>
+                    </svg>
+                </div>
+                <form class="search-area-form" action="/Search/Search?s={search}">
+                    <div class="form-group position-relative">
+                        <input class="search-area-input" type="search" name="search" id="search" placeholder="What are you looking for?">
+                        <button class="search-area-button" type="submit">
+                            <svg class="svg-icon">
+                                <use xlink:href="#search-1"> </use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </header>
     @RenderBody()
     <!-- Footer-->

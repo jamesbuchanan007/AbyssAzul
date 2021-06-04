@@ -1,8 +1,10 @@
 ﻿@model AbyssAzul.Models.Product
 
+
 @{
     Layout = "~/Views/Shared/_ProductLayout.cshtml";
 }
+
 <div style="padding-top: 75px;"></div>
 <section class="product-details">
     <div class="container">
@@ -12,37 +14,50 @@
                 {
                     <img class="img-fluid" style="padding-top: 5px;" src="/Content/html/img/@image.FileName" alt="@Model.Name">
                 }
-                @*<img class="img-fluid" style="padding-top: 5px;" src="/Content/html/img/20210522123148.jpg" alt="Modern Jacket 3">
-                <img class="img-fluid" style="padding-top: 5px;" src="/Content/html/img/20210522123252.jpg" alt="Modern Jacket 3">
-                <img class="img-fluid" style="padding-top: 5px;" src="/Content/html/img/20210522123317.jpg" alt="Modern Jacket 3">*@
             </div>
             <div class="col-lg-6 col-xl-5 pl-lg-5 pt-4 order-1 order-lg-2">
                 <ul class="breadcrumb undefined">
                     <li class="breadcrumb-item"><a href="/Home/Index">Home</a></li>
-                    <li class="breadcrumb-item"><a href="/Region/@Model.URLName">@Model.Region</a></li>
+                    <li class="breadcrumb-item"><a href="/Region/Region?regionId=@Model.RegionId">@Model.URLName</a></li>
                     <li class="breadcrumb-item active">@Model.Name</li>
                 </ul>
                 <div class="sticky-top" style="top: 100px;">
                     <h1 class="h2 mb-4">@Model.Name</h1>
-                    <h3 class="h3 mb-4">Alias: <i>@Model.OtherName</i></h3>
+                    @if (Model.OtherName != "")
+                    {
+                        <h3 class="h3 mb-4">Alias: <i>@Model.OtherName</i></h3>
+                    }
                     <div class="row">
                         <div class="col-sm-6 col-lg-12 detail-option mb-3">
-                            <h4 class="h4 mb-4">Scientific Name: <i>@Model.LatinName</i></h4>
-                            <h6 class="detail-option-heading">Common Names</h6>
-                            <p class="mb-4 text-muted">@Model.CommonNamesFormatted</p>
-
-                            <h6 class="detail-option-heading">Size Ranges</h6>
-                            <p class="mb-4 text-muted">@Model.Size</p>
-
-                            <h6 class="detail-option-heading">Presentations</h6>
-                            <p class="mb-4 text-muted">@Model.Presentation</p>
-
-                            <h6 class="detail-option-heading">Process / Packing</h6>
-                            <p class="mb-4 text-muted">@Model.ProcessPacking</p>
-
-                            <h6 class="detail-option-heading">Origin</h6>
-                            <p class="mb-4 text-muted">@Model.Origin</p>
-
+                            @if (Model.LatinName != "")
+                            {
+                                <h4 class="h4 mb-4">Scientific Name: <i>@Model.LatinName</i></h4>
+                            }
+                            @if (Model.CommonNamesFormatted != "")
+                            {
+                                <h6 class="detail-option-heading">Common Names</h6>
+                                <p class="mb-4 text-muted">@Model.CommonNamesFormatted</p>
+                            }
+                            @if (Model.Size != "")
+                            {
+                                <h6 class="detail-option-heading">Size Ranges</h6>
+                                <p class="mb-4 text-muted">@Model.Size</p>
+                            }
+                            @if (Model.Presentation != "")
+                            {
+                                <h6 class="detail-option-heading">Presentations</h6>
+                                <p class="mb-4 text-muted">@Model.Presentation</p>
+                            }
+                            @if (Model.ProcessPacking != "")
+                            {
+                                <h6 class="detail-option-heading">Process / Packing</h6>
+                                <p class="mb-4 text-muted">@Model.ProcessPacking</p>
+                            }
+                            @if (Model.Origin != "")
+                            {
+                                <h6 class="detail-option-heading">Origin</h6>
+                                <p class="mb-4 text-muted" id="OrigonP">@Model.Origin</p>
+                            }
                         </div>
                     </div>
                 </div>

@@ -71,12 +71,40 @@
                             <a class="nav-link" href="/Region/Region?regionId=5">Other Specialties</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="/Home/Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
+                <div class="d-flex align-items-center justify-content-between justify-content-lg-end mt-1 mb-2 my-lg-0">
+                    <!-- Search Button-->
+                    <div class="nav-item navbar-icon-link" data-toggle="search">
+                        <svg class="svg-icon">
+                            <use xlink:href="#search-1"> </use>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </nav>
+        <!-- Fullscreen search area-->
+        <div class="search-area-wrapper">
+            <div class="search-area d-flex align-items-center justify-content-center">
+                <div class="close-btn">
+                    <svg class="svg-icon svg-icon-light w-3rem h-3rem">
+                        <use xlink:href="#close-1"> </use>
+                    </svg>
+                </div>
+                <form class="search-area-form" action="/Search/Search">
+                    <div class="form-group position-relative">
+                        <input class="search-area-input" type="search" name="search" id="search" placeholder="What are you looking for?">
+                        <button class="search-area-button" type="submit">
+                            <svg class="svg-icon">
+                                <use xlink:href="#search-1"> </use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </header>
     @RenderBody()
     <!-- Footer-->
@@ -183,28 +211,30 @@
     <div id="scrollTop"><i class="fa fa-long-arrow-alt-up"></i></div>
     <!-- JavaScript files-->
     <script>
-        // ------------------------------------------------------- //
-        //   Inject SVG Sprite -
-        //   see more here
-        //   https://css-tricks.com/ajaxing-svg-sprite/
-        // ------------------------------------------------------ //
-        function injectSvgSprite(path) {
+    // ------------------------------------------------------- //
+    //   Inject SVG Sprite -
+    //   see more here
+    //   https://css-tricks.com/ajaxing-svg-sprite/
+    // ------------------------------------------------------ //
+    function injectSvgSprite(path) {
 
-            var ajax = new XMLHttpRequest();
-            ajax.open("GET", path, true);
-            ajax.send();
-            ajax.onload = function (e) {
-                var div = document.createElement("div");
-                div.className = 'd-none';
-                div.innerHTML = ajax.responseText;
-                document.body.insertBefore(div, document.body.childNodes[0]);
-            }
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", path, true);
+        ajax.send();
+        ajax.onload = function (e) {
+            var div = document.createElement("div");
+            div.className = 'd-none';
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
         }
-        // this is set to Bootstrapious website as you cannot
-        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-        // while using file:// protocol
-        // pls don't forget to change to your domain :)
-        injectSvgSprite('https://demo.bootstrapious.com/sell/1-2-0/icons/orion-svg-sprite.svg');</script>
+    }
+
+       
+    // this is set to Bootstrapious website as you cannot
+    // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+    // while using file:// protocol
+    // pls don't forget to change to your domain :)
+    injectSvgSprite('https://demo.bootstrapious.com/sell/1-2-0/icons/orion-svg-sprite.svg');</script>
     <!-- jQuery-->
     <script src="/Content/html/vendor/jquery/jquery.min.js"></script>
     <!-- Bootstrap JavaScript Bundle (Popper.js included)-->
@@ -223,6 +253,8 @@
     <script>var basePath = ''</script>
     <script src="/Content/html/js/theme.js"></script>
     <script src="/Content/html/vendor/jquery-parallax.js/parallax.min.js"></script>
-    <script src="/Content/html/css/custom.css"></script>
+<script src="/Content/html/css/custom.css">
+</script>
+
 </body>
 </html>
